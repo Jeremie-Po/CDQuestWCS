@@ -27,7 +27,7 @@ jobs:
         name: Login to Docker Hub
         with:
           # generate some credentials from Dockerhub and store them into the repo secrets
-          username: djebamboula
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # prepare buildx for docker
@@ -41,4 +41,4 @@ jobs:
           context: ./client
           file: ./client/Dockerfile
           push: true
-          tags: djebamboula\${{ secrets.DOCKER_HUB_CLIENT_IMAGE_NAME }}:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}\${{ secrets.DOCKER_HUB_CLIENT_IMAGE_NAME }}:latest
