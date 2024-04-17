@@ -1,0 +1,2 @@
+2024/04/16 13:17:19 [error] 31#31: *1 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.65.1, server: , request: "GET /graphql HTTP/1.1", upstream: "http://172.24.0.4:5000/graphql", host: "localhost:8000"
+2024/04/16 13:17:28 [error] 31#31: *5 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.65.1, server: , request: "POST /graphql HTTP/1.1", upstream: "http://172.24.0.4:5000/graphql", host: "localhost:8000", referrer: "http://localhost:8000/"
